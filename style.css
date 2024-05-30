@@ -1,0 +1,185 @@
+
+
+.title-img{
+    width: 600px;
+    height: 450px;
+    background-image: url(title.jpg);
+    margin: auto;
+}
+
+#button  {
+    background-color:#f4a460; 
+    color: #fff; 
+    padding: 20px 40px; 
+    border: none; 
+    border-radius:5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Noto Sans JP',cursive;
+    
+
+}
+
+
+.noren-img {
+    width: 600px;
+    height: 300px;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(noren.png);
+    margin:auto;
+    animation-name:fadeInAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+        
+@keyframes fadeInAnime{
+    from {
+        opacity: 0;
+    }
+        
+    to {
+        opacity: 1;
+        }
+}
+
+  body{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color:white;
+    
+}
+html{
+    background-image: url(background.jpg);
+}
+h2{text-align: center;
+    font-family: 'Noto Sans JP', cursive;
+    font-size: 60px;
+}
+p{
+    text-align: center;
+    font-family: 'Noto Sans JP', cursive;
+    font-size: 40px
+}
+
+
+
+
+#button:hover {
+    background-color: #cd853f; 
+    color:#fff;
+}
+
+
+#result{
+    display:none;
+
+    animation-name:fadeInAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+
+
+#foodImg{
+    width: 600px;
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    align-items:flex-start;
+    margin: auto;
+
+}
+#foodName{
+    text-align: center;
+}
+
+.share_button {
+	display: inline-block;
+	padding: 8px 24px;
+	border-radius: 8px;
+	color: #fff;
+	background-color: #333;
+	text-decoration: none;
+	transition: 0.4s;
+}
+.share_button:hover {
+	opacity: 0.7;
+}
+.share_twitter {
+	background-color: #1da1f2;
+}
+
+.share_facebook {
+	background-color: #1877f2;
+    margin: 30px 0px 30px 0px;
+}
+.share_line {
+	background-color: #00b900;
+    font-family: "Material Icons";
+    content:"e625"
+}
+
+
+/* メッセージカード */
+.message-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .message-card {
+    padding: 20px;
+    background-color: #f4a460;
+    color:#fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 20px 0;
+    max-width: 600px; 
+    text-align: center;
+    font-size: 25px;
+  }
+  
+
+/* タイトル下画像並べ */
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    width: 30%;
+    padding: 1.5%;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* レスポンシブのためのメディアクエリ */
+  @media (max-width: 768px) {
+    .grid-item {
+      width: 50%;
+    }
+  }
+  @media (max-width: 480px) {
+    .grid-item {
+      width: 100%;
+    }
+  }
+  
+
+#share {
+    height:400px;
+}
